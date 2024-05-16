@@ -1,0 +1,2 @@
+# translate_cpp_to_pyton
+ Este proyecto es parte de mi aprendizaje autodidacta en la conversión de código de C++ a Python. A través de este proceso, no solo practico la traducción de código entre lenguajes, sino que también mejoro mis habilidades en Python. El proyecto incluye ejemplos y ejercicios de parciales de programación, implementados en ambos lenguajes para facilitar el estudio y la comparación.
