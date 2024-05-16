@@ -25,5 +25,4 @@ Este proyecto es parte de mi aprendizaje autodidacta en la conversión de códig
         pasando_codigos/: Carpeta que contiene ejercicios convertidos.
             pycache/: Carpeta para archivos de caché generados por Python.
             parcial/: Subcarpeta con códigos de parciales para su conversión.
-        pdf/: Carpeta para almacenar archivos PDF relacionados con el proyecto.
         (archivos varios): Archivos adicionales que no encajan en las categorías anteriores.

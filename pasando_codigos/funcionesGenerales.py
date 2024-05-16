@@ -18,3 +18,19 @@ def saludar(nombre):
 
 def calcularCuadrado(num):
     return num * num
+
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Ejercicio 04 / Calcular Partes (quinta y septima)
+
+
+def calcularPartes(num):
+    quintaParte = num / 5
+    septimaParte = quintaParte / 7
+    resto = num % 5
+    return quintaParte, resto, septimaParte
