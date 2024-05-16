@@ -1,5 +1,3 @@
-# CPP TO PYTHON
-
 # Proyecto de Conversión de Códigos de C++ a Python
 
 Descripción:
