@@ -17,12 +17,18 @@ def saludar(nombre):
 
 
 def leerEnteros(msj):
-    n = int(input(msj))
-    return n
+    return int(input(msj))
 
 
 def calcularCuadrado(num):
     return num * num
+
+
+def productoPorSuma(n, m):
+    producto = 0
+    for i in range(m):
+        producto += n
+    return producto
 
 
 def factorial(n):
