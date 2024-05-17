@@ -1,5 +1,5 @@
-from funcionesGenerales import *
-edad = leerEnteros("Ingrese su edad: ")
+from funciones_generales import leer_enteros
+edad = leer_enteros("Ingrese su edad: ")
 
 if edad <= 12:
     print("Es Menor.\n")

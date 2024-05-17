@@ -1,23 +1,8 @@
-# A partir de un valor entero ingresado por teclado, se pide informar:
-# a) La quinta parte de dicho valor
-# b) El resto de la división por 5
-# c) La séptima parte del resultado del punto a)
-from funcionesGenerales import calcularPartes
 
-# Forma calcada a C++
-# num = int(input("Ingrese un numero entero: "))
-# quintaParte = num / 5
-# septimaParte = quintaParte / 7
-# resto = num % 5
-
-# print(f"<-Resultados-> \nLa quinta parte es: {quintaParte} \nEl resto de la division por 5 es: {
-#       resto} \nLa septima parte es: {septimaParte}")
-
-
-# Formato con funcion
+from pasando_codigos.funciones_generales import calcular_partes, leer_enteros
 if __name__ == "__main__":
-    num = int(input("Ingrese un número entero: "))
-    quintaParte, resto, septimaParte = calcularPartes(num)
+    num = leer_enteros("Ingrese un número entero: ")
+    quintaParte, resto, septimaParte = calcular_partes(num)
 
     print("<-Resultados->")
     print(f"La quinta parte es: {quintaParte}")
