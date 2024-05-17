@@ -16,6 +16,11 @@ def saludar(nombre):
     print(f"Hola, {nombre}!")
 
 
+def leerEnteros(msj):
+    n = int(input(msj))
+    return n
+
+
 def calcularCuadrado(num):
     return num * num
 
