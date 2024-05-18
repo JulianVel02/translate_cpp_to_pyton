@@ -135,3 +135,31 @@ def contador_mayores(rango, mayores, menores):
         print(f"Promedio de mayores que {mayores}: {promedio_mayores}")
     print(f"Suma de menores que {menores}: {suma_menores}")
     return suma_menores, promedio_mayores
+
+
+def identificar_mayor_menor(n, mensaje):
+    """Validación del número mayor y menor de una lista de números ingresados por el usuario.
+
+    Args:
+        n (int): La cantidad de números a ingresar.
+        mensaje (str): El mensaje a mostrar al pedir cada número.
+
+    Returns:
+        tuple: El valor mayor y menor de la lista de números ingresados.
+    """
+    valor = int(input(mensaje))
+    mayor = menor = valor
+    for _ in range(n-1):
+        if valor > mayor:
+            mayor = valor
+        if valor < menor:
+            menor = valor
+    return mayor, menor
+
+    #       Ejemplo de uso de identificar_mayor_menor()     #
+
+# n = leer_enteros("Ingrese la cantidad de valores a analizar: ")
+# mensaje = "Ingrese un numero: "
+# mayor, menor = identificar_mayor_menor(n, mensaje)
+# print(f"-> El numero menor es: {menor}")
+# print(f"-> El numero mayor es: {mayor}")

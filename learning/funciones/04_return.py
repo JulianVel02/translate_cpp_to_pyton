@@ -1,5 +1,8 @@
 def suma(a, b):
-    return a + b
+    resultado = a + b
+    return resultado
 
 
-print(suma(1, 2))
+c = suma(1, 2)
+d = suma(c, 2)
+print(d)
