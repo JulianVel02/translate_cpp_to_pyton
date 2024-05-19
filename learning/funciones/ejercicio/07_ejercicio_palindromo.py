@@ -16,10 +16,13 @@ def reverse(texto):
 def es_palindromo(texto):
     texto = no_space(texto)
     texto_invertivo = reverse(texto)
-    return texto.lower() == texto_invertivo.lower()
+    if texto.lower() == texto_invertivo.lower():
+        return print((f"La palabra: {texto} es palindromo! ({texto_invertivo})\n"))
+    else:
+        return print(f"La palabra: {texto} NO es palindromo :/ \n")
 
 
-print(es_palindromo("Amo la paloma"))
-print(es_palindromo("Hola mundo"))
-print(es_palindromo("Reconocer"))
-print(es_palindromo("Somos o no somos"))
+es_palindromo("Amo la paloma")
+es_palindromo("Hola mundo")
+es_palindromo("Reconocer")
+es_palindromo("Somos o no somos")
