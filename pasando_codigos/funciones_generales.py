@@ -43,7 +43,11 @@ def leer_enteros(msj):
     Returns:
         int: El entero ingresado por el usuario.
     """
-    return int(input(msj))
+    while True:
+        try:
+            return int(input(msj))
+        except ValueError:
+            print("Por favor, ingrese un número entero válido.")
 
 
 def calcular_cuadrado(num):
@@ -73,6 +77,27 @@ def producto_por_suma(n, m):
         producto += n
     return producto
 
+# contadores.py
+
+
+class Contadores:
+    def __init__(self):
+        self.cant_mult_3 = 0
+        self.cant_mult_5 = 0
+        self.cant_mult_doble = 0
+
+    def multiplo_de_3(self, n):
+        if n % 3 == 0:
+            self.cant_mult_3 += 1
+
+    def multiplo_de_5(self, n):
+        if n % 5 == 0:
+            self.cant_mult_5 += 1
+
+    def multiplo_3_y_5(self, n):
+        if n % 3 == 0 and n % 5 == 0:
+            self.cant_mult_doble += 1
+
 
 def factorial(n):
     """Calcula el factorial de un número.
@@ -85,6 +110,17 @@ def factorial(n):
     """
     result = 1
     for i in range(1, n + 1):
+        result *= i
+    return result
+
+
+def factorial_largo(n):
+    """Calcular el facotrial de un numero"""
+    result = 1
+    if n < 0:
+        print("Factorial no definido para los negativos.")
+        return False
+    for i in range(1, n+1):
         result *= i
     return result
 
