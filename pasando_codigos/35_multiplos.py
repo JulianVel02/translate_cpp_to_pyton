@@ -1,4 +1,4 @@
-from funciones_generales import leer_enteros, Contadores, factorial_largo
+from shared_libraries.funciones_generales import leer_enteros, Contadores, factorial_largo
 contadores = Contadores()
 
 n = leer_enteros("Ingrese la cantidad de números a analizar: ")

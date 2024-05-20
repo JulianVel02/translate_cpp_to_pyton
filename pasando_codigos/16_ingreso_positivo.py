@@ -1,4 +1,4 @@
-from funciones_generales import leer_enteros
+from shared_libraries.funciones_generales import leer_enteros
 num = 0
 num_ingresados = 0
 

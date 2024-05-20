@@ -1,4 +1,4 @@
-from funciones_generales import leer_enteros
+from shared_libraries.funciones_generales import leer_enteros
 cont_menos1520 = 0
 cont_1520_2780 = 0
 cont_2780_5999 = 0
