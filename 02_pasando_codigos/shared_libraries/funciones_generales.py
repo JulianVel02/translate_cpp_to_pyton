@@ -199,3 +199,25 @@ def identificar_mayor_menor(n, mensaje):
 # mayor, menor = identificar_mayor_menor(n, mensaje)
 # print(f"-> El numero menor es: {menor}")
 # print(f"-> El numero mayor es: {mayor}")
+
+
+def calcular_mcd(a, b):
+    """Calcular el maximo comun divisor(MCD)"""
+    while b != 0:
+        temp = b
+        b = a % b
+        a = temp
+    return a
+
+
+def sumar_tiempo(hora_inicial, tiempo_adicional):
+    segundos_totales = (hora_inicial % 100 + tiempo_adicional % 100) % 60
+    minutos_totales = ((hora_inicial % 10000 // 100 + tiempo_adicional % 10000 // 100) +
+                       (hora_inicial % 100 + tiempo_adicional % 100) // 60) % 60
+    horas_totales = ((hora_inicial // 10000 + tiempo_adicional // 10000) +
+                     (hora_inicial % 10000 // 100 + tiempo_adicional % 10000 // 100 +
+                      (hora_inicial % 100 + tiempo_adicional % 100) // 60) // 60) % 24
+
+    nueva_hora = int(horas_totales * 10000 +
+                     minutos_totales * 100 + segundos_totales)
+    return nueva_hora
