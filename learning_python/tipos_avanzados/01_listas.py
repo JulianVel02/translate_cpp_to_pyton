@@ -3,7 +3,8 @@ letras = ["a", "b", "c"]
 palabras = ["chanchito", "feliz"]
 palabras_felices = ["chanchito", "feliz", "alumnos", "julian"]
 booleans = [True, False, True, True]
-matriz = [[0, 1], [1, 0]]
+matriz = [[1, 0],
+          [0, 1]]
 ceros = [0, 1] * 10
 
 alfanumerico = numeros + letras

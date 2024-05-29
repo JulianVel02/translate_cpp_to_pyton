@@ -1,4 +1,4 @@
-from libraries.funciones_generales import leer_enteros
+from modulos_generales.funciones_generales import leer_enteros
 sublote_mayor = pos_mayor = None
 cant_sublotes = mayor = 0
 

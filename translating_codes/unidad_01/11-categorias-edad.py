@@ -1,4 +1,4 @@
-from libraries.funciones_generales import leer_enteros
+from modulos_generales.funciones_generales import leer_enteros
 edad = leer_enteros("Ingrese su edad: ")
 
 if edad <= 12:

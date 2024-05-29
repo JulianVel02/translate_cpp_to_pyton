@@ -1,4 +1,4 @@
-from libraries.funciones_generales import leer_enteros, sumar_tiempo
+from modulos_generales.funciones_generales import leer_enteros, sumar_tiempo
 hora_inicial = leer_enteros("Ingrese la hora inicial (HHMMSS): ")
 tiempo_adicional = leer_enteros(
     "Ingrese el tiempo a sumar (adicional - HHMMSS): ")
