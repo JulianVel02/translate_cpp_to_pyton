@@ -1,8 +1,9 @@
+"""Cargando un array"""
 from modulos_arreglos.funciones_arrays import cargar_vector
-n = 5
+N = 5
 vector = []
-cargar_vector(n, vector)
+cargar_vector(N, vector)
 
 print("------------------------")
-for i in range(n):
+for i in range(N):
     print(vector[i])

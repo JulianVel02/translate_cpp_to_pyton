@@ -35,8 +35,32 @@ def leer_enteros(msj):
             print("Por favor, ingrese un número entero válido.")
 
 
-def cargar_vector(N, vector):
-    vector.extend([None]*N)  # redimensiona la lista para que tenga N elementos
+def read_int(prompt):
+    """
+    Función para leer un número entero desde la entrada estándar.
+    :param prompt: Mensaje que se mostrará al usuario.
+    :return: Número entero ingresado por el usuario.
+    """
+    return int(input(prompt))
+
+
+def esPar(num):
+    return num % 2 == 0
+
+
+def factorial(n):
+    """Calcular el factorial de N"""
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+def cargar_vector(N):
+    """Función para cargar un vector con N elementos."""
+    vector = []
+    # Bucle para solicitar N números enteros al usuario
     for i in range(N):
-        numero = int(input(f"Ingresa el numero {i+1}: "))
-        vector[i] = numero
+        numero = leer_enteros(f"Ingresa el numero {i + 1}: ")
+        vector.append(numero)  # Añade cada número ingresado al vector
+    return vector
